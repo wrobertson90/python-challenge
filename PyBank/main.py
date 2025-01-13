@@ -41,7 +41,7 @@ output= (f"Financial Analysis"
          f"--------------\n"
          f"Total Months: {total_months}\n"
          f"Total: ${total_net:,}\n"
-         f"Average Change: ${average_change:,}\n"
+         f"Average Change: ${average_change:,.2f}\n"
          f"Greatest Increase In Profits: {greatest_increase[0]} (${greatest_increase[1]:,})\n"
          f"Greatest Decrease In Profits: {greatest_decrease[0]} (${greatest_decrease[1]:,})\n"
          )
