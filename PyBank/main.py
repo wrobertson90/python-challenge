@@ -39,7 +39,7 @@ with open(file_to_load) as budget_data:
             greatest_decrease[1]=net_change
 #calculate average change
 average_change= sum(changes)/ len(changes)
-#show print and write the data out
+#label the run data
 output= (f"Financial Analysis"
          f"--------------\n"
          f"Total Months: {total_months}\n"
@@ -48,6 +48,7 @@ output= (f"Financial Analysis"
          f"Greatest Increase In Profits: {greatest_increase[0]} (${greatest_increase[1]:,})\n"
          f"Greatest Decrease In Profits: {greatest_decrease[0]} (${greatest_decrease[1]:,})\n"
          )
+#print and write the output
 print(output)
 with open(file_to_output, "w") as txt_file:
     txt_file.write(output)
